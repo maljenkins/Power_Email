@@ -1,7 +1,4 @@
 {
-  "settings": {
-    "hml": false
-  },
   "colors": {
     "email_background": "#f6f6f6"
   },
@@ -39,33 +36,38 @@
   "header": {
     "image": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg"
   },
-  "social": [
-    {
-      "name": "facebook",
-      "link": "#",
-      "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
-    },
-    {
-      "name": "twitter",
-      "link": "#",
-      "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
-    },
-    {
-      "name": "linkedin",
-      "link": "#",
-      "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
-    },
-    {
-      "name": "youtube",
-      "link": "#",
-      "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/youtube.png"
-    },
-    {
-      "name": "instagram",
-      "link": "#",
-      "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png"
-    }
-  ],
+  "social": {
+    "facebook": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
+      }
+    ],
+    "twitter": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
+      }
+    ],
+    "linkedin": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
+      }
+    ],
+    "youtube": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/youtube.png"
+      }
+    ],
+    "instagram": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png"
+      }
+    ]
+  },
   "pages": [
     {
       "filename": "standard.html"
