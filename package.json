@@ -1,0 +1,24 @@
+{
+  "name": "power_email",
+  "version": "1.0.0",
+  "description": "Chesh Power Emails",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maljenkins/Power_Email.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/maljenkins/Power_Email/issues"
+  },
+  "homepage": "https://github.com/maljenkins/Power_Email#readme"
+}

@@ -1,0 +1,79 @@
+{
+  "general": {
+    "business_name": "Cheshire Impact",
+    "street_address": "1 Tara Blvd Suite 200",
+    "city_state_zip": "Nashua, NH 03062",
+    "phone": "844-GO-IMPACT",
+    "about": "We're the Digital Marketing Un-Agency. Our goal is to create maximum marketing impact and to do it with measurable results.",
+    "website": "https://cheshireimpact.com",
+    "logo": "https://maljenkins.github.io/cheshPublic/images/cheshlogodark.png",
+    "logo_width": "150",
+    "favicon": "https://www.cheshireimpact.com/wp-content/uploads/2018/07/new-favicon.png",
+    "contact_url": "https://www.cheshireimpact.com/contact/",
+    "privacy_url": "https://www.cheshireimpact.com/privacy/"
+  },
+  "nav": {
+    "fixed": true,
+    "links": true,
+    "link_info": [
+      {
+        "text": "Services",
+        "url": "https://www.cheshireimpact.com/services/"
+      },
+      {
+        "text": "About",
+        "url": "https://www.cheshireimpact.com/about/"
+      },
+      {
+        "text": "Contact",
+        "url": "https://www.cheshireimpact.com/contact/"
+      }
+    ]
+  },
+  "header": {
+    "image": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg"
+  },
+  "social": {
+    "facebook": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
+      }
+    ],
+    "twitter": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
+      }
+    ],
+    "linkedin": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
+      }
+    ],
+    "youtube": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/youtube.png"
+      }
+    ],
+    "instagram": [
+      {
+        "link": "",
+        "image": "https://www.mailjet.com/images/theme/v1/icons/ico-social/instagram.png"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "filename": "standard.html"
+    },
+    {
+      "filename": "services.html"
+    },
+    {
+      "filename": "events.html"
+    }
+  ]
+}
