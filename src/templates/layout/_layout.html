@@ -73,18 +73,14 @@
 </style>
 <![endif]-->
 
-  {% block custom_fonts %}
-  {% endblock %}
-
-  {% block mj_classes %}
-  {% endblock %}
-
-  {% block media_queries %}
-  {% endblock %}
+  {% include "../includes/custom_fonts.html" %}
+  {% include "../includes/mj_classes.html" %}
+  {% include "../includes/media_queries.html" %}
+  {% include "../includes/link_colors.html" %}
 </head>
 
 
-<body style="background-color:{{colors.email_background}};padding-top:10px;">
+<body style="background-color:{{styles.colors.email_background}};padding-top:10px;">
   <!--[if mso]>
       <style type="text/css">
         body,
@@ -104,7 +100,7 @@
         }
       </style>
     <![endif]-->
-  <div style="background-color:{{colors.email_background}};">
+  <div style="background-color:{{styles.colors.email_background}};">
     <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"

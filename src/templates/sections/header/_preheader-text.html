@@ -4,10 +4,10 @@
 
 {% block section_content %}
 <div
-    style="background:{{colors.email_background}};background-color:{{colors.email_background}};margin:0px auto;max-width:600px;">
+    style="background:{{styles.colors.email_background}};background-color:{{styles.colors.email_background}};margin:0px auto;max-width:600px;">
 
     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-        style="background:{{colors.email_background}};background-color:{{colors.email_background}};width:100%;">
+        style="background:{{styles.colors.email_background}};background-color:{{styles.colors.email_background}};width:100%;">
         <tbody>
             <tr>
                 <td
@@ -30,7 +30,7 @@
                                     <td align="left" class="mobileCenter"
                                         style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                         <div
-                                            style="font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:10px;font-weight:400;line-height:13px;text-align:left;color:rgb(144, 144, 144);">
+                                            style="font-family:{{styles.fonts.family}};font-size:10px;font-weight:400;line-height:13px;text-align:left;color:{{styles.colors.grey}};">
                                             <div pardot-region="">Header text appears here.</div>
                                         </div>
                                     </td>
@@ -55,15 +55,15 @@
                                     <td align="right" class="mobileCenter"
                                         style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                         <div
-                                            style="font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:10px;font-weight:400;line-height:13px;text-align:right;color:rgb(144, 144, 144);">
+                                            style="font-family:{{styles.fonts.family}};font-size:10px;font-weight:400;line-height:13px;text-align:right;color:{{styles.colors.grey}};">
                                             Can't see this email? <a class="greyLink" href=" {% if settings.hml == true %}
                                             {% raw %}
                                             {{View_Online}}
                                             {% endraw %}
                                             {% else %}
                                             %%view_online%%
-                                            {% endif %}" style="color: rgb(144, 144, 144);"><span
-                                                    style="color: rgb(144, 144, 144);">View Online</span></a>
+                                            {% endif %}" style="color: {{styles.colors.grey}};"><span
+                                                    style="color: {{styles.colors.grey}};">View Online</span></a>
                                         </div>
                                     </td>
                                 </tr>

@@ -3,9 +3,10 @@
 
 
 {% block section_content %}
-<div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+<div
+    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-        style="background:#ffffff;background-color:#ffffff;width:100%;">
+        style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
         <tbody>
             <tr>
                 <td
@@ -30,12 +31,12 @@
                                             role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                             <tbody>
                                                 <tr>
-                                                    <td class="full-width-mobile" style="width:150px;"><a
+                                                    <td class="full-width-mobile"
+                                                        style="width:{{general.logo_width}}px;"><a
                                                             href="{{general.website}}" target="_blank"><img
-                                                                height="auto" pardot-region=""
-                                                                src="https://go.pardot.com/l/863251/2020-05-13/mg58mz/863251/85513/css_logo_300_CI.png"
+                                                                height="auto" pardot-region="" src="{{general.logo}}"
                                                                 style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;"
-                                                                width="150"> </a></td>
+                                                                width="{{general.logo_width}}"> </a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -72,9 +73,9 @@
              style="padding:15px 10px;" class="pardot-region-outlook"
           >
         
-    <![endif]--><a class="mj-link" href="{{general.website}}" pardot-region=""
-                                                style="display:inline-block;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
-                                                target="_blank">Product </a>
+    <![endif]--><a class="mj-link" href="{{nav[0].url}}" pardot-region=""
+                                                style="display:inline-block;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
+                                                target="_blank">{{nav[0].text}} </a>
                                             <!--[if mso | IE]>
     
           </td>
@@ -85,9 +86,9 @@
              style="padding:15px 10px;" class="pardot-region-outlook"
           >
         
-    <![endif]--> <a class="mj-link" href="{{general.website}}" pardot-region=""
-                                                style="display:inline-block;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
-                                                target="_blank"> Customers </a>
+    <![endif]--> <a class="mj-link" href="{{nav[1].url}}" pardot-region=""
+                                                style="display:inline-block;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
+                                                target="_blank"> {{nav[1].text}} </a>
                                             <!--[if mso | IE]>
     
           </td>
@@ -98,9 +99,9 @@
              style="padding:15px 10px;" class="pardot-region-outlook"
           >
         
-    <![endif]--> <a class="mj-link" href="{{general.website}}" pardot-region=""
-                                                style="display:inline-block;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
-                                                target="_blank"> Company </a>
+    <![endif]--> <a class="mj-link" href="{{nav[2].url}}" pardot-region=""
+                                                style="display:inline-block;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
+                                                target="_blank"> {{nav[2].text}} </a>
                                             <!--[if mso | IE]>
     
           </td>

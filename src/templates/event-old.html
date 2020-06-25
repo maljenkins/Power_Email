@@ -167,15 +167,33 @@
     </style>
     <style type="text/css">
         a {
-            color: #00587c;
+            color: {
+                    {
+                    styles.colors.primary
+                }
+            }
+
+            ;
         }
 
         a:link {
-            color: #00587c;
+            color: {
+                    {
+                    styles.colors.primary
+                }
+            }
+
+            ;
         }
 
         a:visited {
-            color: #00587c;
+            color: {
+                    {
+                    styles.colors.primary
+                }
+            }
+
+            ;
         }
 
         @media (max-width:480px) {
@@ -243,7 +261,7 @@
                                             <td align="left" class="mobileCenter"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:10px;font-weight:400;line-height:13px;text-align:left;color:rgb(144, 144, 144);">
+                                                    style="font-family:{{styles.fonts.family}};font-size:10px;font-weight:400;line-height:13px;text-align:left;color:{{styles.colors.grey}};">
                                                     <div pardot-region="">Header text appears here.</div>
                                                 </div>
                                             </td>
@@ -268,10 +286,11 @@
                                             <td align="right" class="mobileCenter"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:400;line-height:13px;text-align:right;color:rgb(144, 144, 144);">
+                                                    style="font-family:{{styles.fonts.family}};font-size:10px;font-weight:400;line-height:13px;text-align:right;color:{{styles.colors.grey}};">
                                                     Can't see this email? <a class="greyLink" href="%%view_online%%"
-                                                        style="color: rgb(144, 144, 144);"><span
-                                                            style="color: rgb(144, 144, 144);">View Online</span></a>
+                                                        style="color: {{styles.colors.grey}};"><span
+                                                            style="color: {{styles.colors.grey}};">View
+                                                            Online</span></a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -298,7 +317,7 @@
         <!-- Email Header and Nav -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -307,7 +326,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -377,7 +396,7 @@
           >
         
     <![endif]--><a class="mj-link" href="{{general.website}}" pardot-region=""
-                                                        style="display:inline-block;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
+                                                        style="display:inline-block;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
                                                         target="_blank">Product </a>
                                                     <!--[if mso | IE]>
     
@@ -390,7 +409,7 @@
           >
         
     <![endif]--> <a class="mj-link" href="{{general.website}}" pardot-region=""
-                                                        style="display:inline-block;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
+                                                        style="display:inline-block;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
                                                         target="_blank"> Customers </a>
                                                     <!--[if mso | IE]>
     
@@ -403,7 +422,7 @@
           >
         
     <![endif]--> <a class="mj-link" href="{{general.website}}" pardot-region=""
-                                                        style="display:inline-block;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
+                                                        style="display:inline-block;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:40px;text-decoration:none;text-transform:uppercase;padding:15px 10px;"
                                                         target="_blank"> Company </a>
                                                     <!--[if mso | IE]>
     
@@ -440,7 +459,7 @@
         <!-- Full Width Image -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -449,7 +468,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -521,7 +540,7 @@
         <!-- Headline, Numbered List, Text, Button -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -530,7 +549,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -554,9 +573,10 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:32px;font-weight:700;line-height:40px;text-align:center;color:#00587c;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:32px;font-weight:700;line-height:40px;text-align:center;color:{{styles.colors.secondary}};">
                                                     <div pardot-region="">Lorem ipsum dolor sit amet <span
-                                                            class="highlightText" style="color: #ffb700;">consectetur
+                                                            class="highlightText"
+                                                            style="color: {{styles.colors.primary}};">consectetur
                                                             adipiscing</span> elit roldor</div>
                                                 </div>
                                             </td>
@@ -566,12 +586,12 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <table border="0" cellpadding="0" cellspacing="0"
-                                                    style="color:#333333;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;table-layout:auto;width:85%;border:none;"
+                                                    style="color:{{styles.colors.body_color}};font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;table-layout:auto;width:85%;border:none;"
                                                     width="85%">
                                                     <tbody>
                                                         <tr pardot-removable="" pardot-repeatable="">
                                                             <td class="primaryText" pardot-region=""
-                                                                style="font-size: 14px; font-weight: bold; padding-left: 25px; color: #ffb700;"
+                                                                style="font-size: 14px; font-weight: bold; padding-left: 25px; color: {{styles.colors.primary}};"
                                                                 valign="top" width="20px">1.</td>
                                                             <td pardot-region="" valign="top">Donec id metus et eros
                                                                 porttitor ultrices. Praesent quis diam sit amet massa
@@ -579,7 +599,7 @@
                                                         </tr>
                                                         <tr pardot-removable="" pardot-repeatable="">
                                                             <td class="primaryText" pardot-region=""
-                                                                style="font-size: 14px; font-weight: bold; padding-left: 25px; color: #ffb700;"
+                                                                style="font-size: 14px; font-weight: bold; padding-left: 25px; color: {{styles.colors.primary}};"
                                                                 valign="top" width="20px">2.</td>
                                                             <td pardot-region="" valign="top">Donec id metus et eros
                                                                 porttitor ultrices. Praesent quis diam sit amet massa
@@ -587,7 +607,7 @@
                                                         </tr>
                                                         <tr pardot-removable="" pardot-repeatable="">
                                                             <td class="primaryText" pardot-region=""
-                                                                style="font-size: 14px; font-weight: bold; padding-left: 25px; color: #ffb700;"
+                                                                style="font-size: 14px; font-weight: bold; padding-left: 25px; color: {{styles.colors.primary}};"
                                                                 valign="top" width="20px">3.</td>
                                                             <td pardot-region="" valign="top">Donec id metus et eros
                                                                 porttitor ultrices. Praesent quis diam sit amet massa
@@ -602,7 +622,7 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:center;color:#333333;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:center;color:{{styles.colors.body_color}};">
                                                     <div pardot-region="">Nullam eu tempus dui, et iaculis massa. Duis
                                                         efficitur turpis sed suscipit imperdiet. Ut euismod malesuada
                                                         orci, at tincidunt mauris condimentum malesuada.</div>
@@ -618,11 +638,12 @@
                                                     style="border-collapse:separate;line-height:100%;">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="center" bgcolor="#00587c" role="presentation"
-                                                                style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:#00587c;"
+                                                            <td align="center" bgcolor="{{styles.colors.secondary}}"
+                                                                role="presentation"
+                                                                style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:{{styles.colors.secondary}};"
                                                                 valign="middle"><a href="{{general.website}}"
                                                                     pardot-region=""
-                                                                    style="display:inline-block;background:#00587c;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
+                                                                    style="display:inline-block;background:{{styles.colors.secondary}};color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
                                                                     target="_blank">Learn More </a></td>
                                                         </tr>
                                                     </tbody>
@@ -652,7 +673,7 @@
         <!-- Section With Primary Background Color and White Text -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffb700;background-color:#ffb700;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.primary}};background-color:{{styles.colors.primary}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -661,7 +682,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffb700;background-color:#ffb700;width:100%;">
+                style="background:{{styles.colors.primary}};background-color:{{styles.colors.primary}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -685,7 +706,7 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;line-height:28px;text-align:center;color:#ffffff;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:22px;font-weight:700;line-height:28px;text-align:center;color:{{styles.colors.white}};">
                                                     <div pardot-region="">WEBINAR OR EVENT TITLE</div>
                                                 </div>
                                             </td>
@@ -695,7 +716,7 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:center;color:#ffffff;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:center;color:{{styles.colors.white}};">
                                                     <div pardot-region="">7:00PM DECEMBER 14, 2018 | LAS VEGAS
                                                         CONVENTION CENTER</div>
                                                 </div>
@@ -724,7 +745,7 @@
         <!-- 33/33/33 Section with Image on Top of Article -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffb700;background-color:#ffb700;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.primary}};background-color:{{styles.colors.primary}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -733,7 +754,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffb700;background-color:#ffb700;width:100%;">
+                style="background:{{styles.colors.primary}};background-color:{{styles.colors.primary}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -761,11 +782,12 @@
                                                     style="border-collapse:separate;width:100%;line-height:100%;">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="center" bgcolor="#ffffff" role="presentation"
-                                                                style="border:1px solid #ffffff;border-radius:0px;cursor:auto;mso-padding-alt:10px 25px;background:#ffffff;"
+                                                            <td align="center" bgcolor="{{styles.colors.white}}"
+                                                                role="presentation"
+                                                                style="border:1px solid {{styles.colors.white}};border-radius:0px;cursor:auto;mso-padding-alt:10px 25px;background:{{styles.colors.white}};"
                                                                 valign="middle"><a href="{{general.website}}"
                                                                     pardot-region=""
-                                                                    style="display:inline-block;background:#ffffff;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;"
+                                                                    style="display:inline-block;background:{{styles.colors.white}};color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;"
                                                                     target="_blank">RSVP NOW </a></td>
                                                         </tr>
                                                     </tbody>
@@ -799,10 +821,10 @@
                                                     <tbody>
                                                         <tr>
                                                             <td align="center" bgcolor="transparent" role="presentation"
-                                                                style="border:1px solid #ffffff;border-radius:0px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;"
+                                                                style="border:1px solid {{styles.colors.white}};border-radius:0px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;"
                                                                 valign="middle"><a href="{{general.website}}"
                                                                     pardot-region=""
-                                                                    style="display:inline-block;background:transparent;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;"
+                                                                    style="display:inline-block;background:transparent;color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;"
                                                                     target="_blank">Add TO ICAL </a></td>
                                                         </tr>
                                                     </tbody>
@@ -835,10 +857,10 @@
                                                     <tbody>
                                                         <tr>
                                                             <td align="center" bgcolor="transparent" role="presentation"
-                                                                style="border:1px solid #ffffff;border-radius:0px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;"
+                                                                style="border:1px solid {{styles.colors.white}};border-radius:0px;cursor:auto;mso-padding-alt:10px 25px;background:transparent;"
                                                                 valign="middle"><a href="{{general.website}}"
                                                                     pardot-region=""
-                                                                    style="display:inline-block;background:transparent;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;"
+                                                                    style="display:inline-block;background:transparent;color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:12px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:0px;"
                                                                     target="_blank">Add TO GOOGLE </a></td>
                                                         </tr>
                                                     </tbody>
@@ -867,7 +889,7 @@
         </div>
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>      
 <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -876,7 +898,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -900,7 +922,7 @@
                                             <td align="center" class="mobileCenter"
                                                 style="font-size:0px;padding:10px 25px;padding-top:15px;padding-bottom:0px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:700;line-height:33px;text-align:center;color:#00587c;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:26px;font-weight:700;line-height:33px;text-align:center;color:{{styles.colors.secondary}};">
                                                     <div pardot-region="">GALLERY</div>
                                                 </div>
                                             </td>
@@ -928,7 +950,7 @@
         <!-- 33/33/33 Section with Image on Top of Article -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -937,7 +959,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -1070,7 +1092,7 @@
         </div>
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>      
 <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -1079,7 +1101,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -1107,11 +1129,12 @@
                                                     style="border-collapse:separate;width:75%;line-height:100%;">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="center" bgcolor="#ffb700" role="presentation"
-                                                                style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:#ffb700;"
+                                                            <td align="center" bgcolor="{{styles.colors.primary}}"
+                                                                role="presentation"
+                                                                style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:{{styles.colors.primary}};"
                                                                 valign="middle"><a href="{{general.website}}"
                                                                     pardot-region=""
-                                                                    style="display:inline-block;background:#ffb700;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
+                                                                    style="display:inline-block;background:{{styles.colors.primary}};color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
                                                                     target="_blank">VIEW FULL GALLERY </a></td>
                                                         </tr>
                                                     </tbody>
@@ -1141,7 +1164,7 @@
         <!-- Divider -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -1150,7 +1173,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -1177,7 +1200,7 @@
                                                             <td align="left"
                                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                 <div
-                                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:left;color:#333333;">
+                                                                    style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                                                     <table border="0" cellpadding="0" cellspacing="0"
                                                                         style="width: 100% !important;" width="100%">
                                                                         <tbody>
@@ -1220,7 +1243,7 @@
         <!-- 35/65 Section with Image Left & Article Right -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -1229,7 +1252,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -1292,7 +1315,7 @@
                                                             <td align="left"
                                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                 <div
-                                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:700;line-height:23px;text-align:left;color:#00587c;">
+                                                                    style="font-family:{{styles.fonts.family}};font-size:18px;font-weight:700;line-height:23px;text-align:left;color:{{styles.colors.secondary}};">
                                                                     <div pardot-region="">SPEAKER NAME</div>
                                                                 </div>
                                                             </td>
@@ -1302,7 +1325,7 @@
                                                             <td align="left"
                                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                 <div
-                                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:left;color:#333333;">
+                                                                    style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                                                     <div pardot-region="">Nullam eu tempus dui, et
                                                                         iaculis massa. Duis efficitur turpis sed
                                                                         suscipit imperdiet. Ut euismod malesuada orci,
@@ -1316,11 +1339,11 @@
                                                             <td align="left"
                                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                 <div
-                                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;text-align:left;text-transform:uppercase;color:#ffb700;">
+                                                                    style="font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;text-align:left;text-transform:uppercase;color:{{styles.colors.primary}};">
                                                                     <a class="highlightLink" href="{{general.website}}"
                                                                         pardot-region=""
-                                                                        style="color: #ffb700; text-decoration: none;"><span
-                                                                            style="color: #ffb700; text-decoration: none;">LEARN
+                                                                        style="color: {{styles.colors.primary}}; text-decoration: none;"><span
+                                                                            style="color: {{styles.colors.primary}}; text-decoration: none;">LEARN
                                                                             MORE ABOUT SPEAKER NAME</span></a></div>
                                                             </td>
                                                         </tr>
@@ -1351,7 +1374,7 @@
         <!-- Divider -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -1360,7 +1383,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -1387,7 +1410,7 @@
                                                             <td align="left"
                                                                 style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                 <div
-                                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:left;color:#333333;">
+                                                                    style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                                                     <table border="0" cellpadding="0" cellspacing="0"
                                                                         style="width: 100% !important;" width="100%">
                                                                         <tbody>
@@ -1423,7 +1446,8 @@
             </table>
         </div>
 
-        <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+        <div
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>      
 <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
@@ -1432,13 +1456,13 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
                             style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;">
                             <div pardot-removable="" pardot-repeatable=""
-                                style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:560px;">
+                                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:560px;">
                                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -1454,7 +1478,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                    style="background:#ffffff;background-color:#ffffff;width:100%;">
+                                    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                                     <tbody>
                                         <tr>
                                             <td
@@ -1478,7 +1502,7 @@
                                                                 <td align="center"
                                                                     style="font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:15px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:26px;font-weight:700;line-height:33px;text-align:center;color:#00587c;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:26px;font-weight:700;line-height:33px;text-align:center;color:{{styles.colors.secondary}};">
                                                                         <div pardot-region="">Upcoming Courses</div>
                                                                     </div>
                                                                 </td>
@@ -1508,7 +1532,7 @@
                             </div>
 
                             <div pardot-removable="" pardot-repeatable=""
-                                style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:560px;">
+                                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:560px;">
                                 <!--[if mso | IE]>
             <tr>
               <td
@@ -1522,7 +1546,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                    style="background:#ffffff;background-color:#ffffff;width:100%;">
+                                    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                                     <tbody>
                                         <tr>
                                             <td
@@ -1586,7 +1610,7 @@
                                                                 <td align="left"
                                                                     style="font-size:0px;padding:10px 25px;padding-bottom:4px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:19px;text-align:left;color:#00587c;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:14px;font-weight:bold;line-height:19px;text-align:left;color:{{styles.colors.secondary}};">
                                                                         <div class="pardot-region">DOLOR SIT AMET</div>
 
                                                                         <div class="pardot-region">DECEMBER 14, 2018 |
@@ -1598,7 +1622,7 @@
                                                                 <td align="left"
                                                                     style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:left;color:#333333;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                                                         <div class="pardot-region">Quisque orci sapien,
                                                                             convallis sit amet ipsum et, tristique
                                                                             vestibulum ligula. Quisque at egestas eros.
@@ -1620,7 +1644,7 @@
                                                                                     valign="middle"><a
                                                                                         href="{{general.website}}"
                                                                                         pardot-region=""
-                                                                                        style="display:inline-block;background:none;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:5px;mso-padding-alt:0px;border-radius:4px;"
+                                                                                        style="display:inline-block;background:none;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:5px;mso-padding-alt:0px;border-radius:4px;"
                                                                                         target="_blank">VIEW COURSE </a>
                                                                                 </td>
                                                                             </tr>
@@ -1653,7 +1677,7 @@
                             </div>
 
                             <div pardot-removable="" pardot-repeatable=""
-                                style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:560px;">
+                                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:560px;">
                                 <!--[if mso | IE]>            
 <tr>
               <td
@@ -1667,7 +1691,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                    style="background:#ffffff;background-color:#ffffff;width:100%;">
+                                    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                                     <tbody>
                                         <tr>
                                             <td
@@ -1726,7 +1750,7 @@
                             </div>
 
                             <div pardot-removable="" pardot-repeatable=""
-                                style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:560px;">
+                                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:560px;">
                                 <!--[if mso | IE]>
             <tr>
               <td
@@ -1740,7 +1764,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                    style="background:#ffffff;background-color:#ffffff;width:100%;">
+                                    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                                     <tbody>
                                         <tr>
                                             <td
@@ -1803,7 +1827,7 @@
                                                                 <td align="left"
                                                                     style="font-size:0px;padding:10px 25px;padding-bottom:4px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:19px;text-align:left;color:#00587c;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:14px;font-weight:bold;line-height:19px;text-align:left;color:{{styles.colors.secondary}};">
                                                                         <div class="pardot-region">DOLOR SIT AMET</div>
 
                                                                         <div class="pardot-region">DECEMBER 14, 2018 |
@@ -1815,7 +1839,7 @@
                                                                 <td align="left"
                                                                     style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:left;color:#333333;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                                                         <div class="pardot-region">Quisque orci sapien,
                                                                             convallis sit amet ipsum et, tristique
                                                                             vestibulum ligula. Quisque at egestas eros.
@@ -1837,7 +1861,7 @@
                                                                                     valign="middle"><a
                                                                                         href="{{general.website}}"
                                                                                         pardot-region=""
-                                                                                        style="display:inline-block;background:none;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:5px;mso-padding-alt:0px;border-radius:4px;"
+                                                                                        style="display:inline-block;background:none;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:5px;mso-padding-alt:0px;border-radius:4px;"
                                                                                         target="_blank">VIEW COURSE </a>
                                                                                 </td>
                                                                             </tr>
@@ -1870,7 +1894,7 @@
                             </div>
 
                             <div pardot-removable="" pardot-repeatable=""
-                                style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:560px;">
+                                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:560px;">
                                 <!--[if mso | IE]>
             <tr>
               <td
@@ -1884,7 +1908,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                    style="background:#ffffff;background-color:#ffffff;width:100%;">
+                                    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                                     <tbody>
                                         <tr>
                                             <td
@@ -1943,7 +1967,7 @@
                             </div>
 
                             <div pardot-removable="" pardot-repeatable=""
-                                style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:560px;">
+                                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:560px;">
                                 <!--[if mso | IE]>
             <tr>
               <td
@@ -1957,7 +1981,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
                                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                    style="background:#ffffff;background-color:#ffffff;width:100%;">
+                                    style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                                     <tbody>
                                         <tr>
                                             <td
@@ -2020,7 +2044,7 @@
                                                                 <td align="left"
                                                                     style="font-size:0px;padding:10px 25px;padding-bottom:4px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:19px;text-align:left;color:#00587c;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:14px;font-weight:bold;line-height:19px;text-align:left;color:{{styles.colors.secondary}};">
                                                                         <div class="pardot-region">DOLOR SIT AMET</div>
 
                                                                         <div class="pardot-region">DECEMBER 14, 2018 |
@@ -2032,7 +2056,7 @@
                                                                 <td align="left"
                                                                     style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                                                     <div
-                                                                        style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:19px;text-align:left;color:#333333;">
+                                                                        style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                                                         <div class="pardot-region">Quisque orci sapien,
                                                                             convallis sit amet ipsum et, tristique
                                                                             vestibulum ligula. Quisque at egestas eros.
@@ -2054,7 +2078,7 @@
                                                                                     valign="middle"><a
                                                                                         href="{{general.website}}"
                                                                                         pardot-region=""
-                                                                                        style="display:inline-block;background:none;color:#00587c;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:5px;mso-padding-alt:0px;border-radius:4px;"
+                                                                                        style="display:inline-block;background:none;color:{{styles.colors.secondary}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:5px;mso-padding-alt:0px;border-radius:4px;"
                                                                                         target="_blank">VIEW COURSE </a>
                                                                                 </td>
                                                                             </tr>
@@ -2099,7 +2123,7 @@
         </div>
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>      
 <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -2108,7 +2132,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#ffffff;background-color:#ffffff;width:100%;">
+                style="background:{{styles.colors.white}};background-color:{{styles.colors.white}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -2136,11 +2160,12 @@
                                                     style="border-collapse:separate;width:80%;line-height:100%;">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="center" bgcolor="#ffb700" role="presentation"
-                                                                style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:#ffb700;"
+                                                            <td align="center" bgcolor="{{styles.colors.primary}}"
+                                                                role="presentation"
+                                                                style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:{{styles.colors.primary}};"
                                                                 valign="middle"><a href="{{general.website}}"
                                                                     pardot-region=""
-                                                                    style="display:inline-block;background:#ffb700;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
+                                                                    style="display:inline-block;background:{{styles.colors.primary}};color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
                                                                     target="_blank">VIEW MORE COURSES </a></td>
                                                         </tr>
                                                     </tbody>
@@ -2170,7 +2195,7 @@
         <!-- Footer Section -->
 
         <div pardot-removable="" pardot-repeatable=""
-            style="background:#193358;background-color:#193358;margin:0px auto;max-width:600px;">
+            style="background:{{styles.colors.footer_background}};background-color:{{styles.colors.footer_background}};margin:0px auto;max-width:600px;">
             <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="pardot-repeat-remove-outlook" style="width:600px;" width="600"
@@ -2179,7 +2204,7 @@
           <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
       <![endif]-->
             <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
-                style="background:#193358;background-color:#193358;width:100%;">
+                style="background:{{styles.colors.footer_background}};background-color:{{styles.colors.footer_background}};width:100%;">
                 <tbody>
                     <tr>
                         <td
@@ -2307,10 +2332,10 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:5px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:400;line-height:13px;text-align:center;color:#ffffff;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:10px;font-weight:400;line-height:13px;text-align:center;color:{{styles.colors.white}};">
                                                     <a class="whiteLink" href="{{general.website}}" pardot-region=""
-                                                        style="color: #fff; text-decoration: none;"><span
-                                                            style="color: #fff; text-decoration: none;">{{general.business_name}},
+                                                        style="color: {{styles.colors.white}}; text-decoration: none;"><span
+                                                            style="color: {{styles.colors.white}}; text-decoration: none;">{{general.business_name}},
                                                             {{general.street_address}},
                                                             {{general.city_state_zip}}</span></a></div>
                                             </td>
@@ -2319,19 +2344,19 @@
                                             <td align="center"
                                                 style="font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;">
                                                 <div
-                                                    style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:400;line-height:13px;text-align:center;color:#ffffff;">
+                                                    style="font-family:{{styles.fonts.family}};font-size:10px;font-weight:400;line-height:13px;text-align:center;color:{{styles.colors.white}};">
                                                     <div pardot-region=""><a class="whiteLink" href="%%unsubscribe%%"
-                                                            style="color: #fff; text-decoration: none;"><span
-                                                                style="color: #fff; text-decoration: none;">Unsubscribe</span></a>
+                                                            style="color: {{styles.colors.white}}; text-decoration: none;"><span
+                                                                style="color: {{styles.colors.white}}; text-decoration: none;">Unsubscribe</span></a>
                                                         | Copyright &copy; {{general.business_name}}&nbsp;2020 | <a
                                                             class="whiteLink" href="{{general.website}}"
                                                             pardot-region=""
-                                                            style="color: #fff; text-decoration: none;"><span
-                                                                style="color: #fff; text-decoration: none;">Contact</span></a>
+                                                            style="color: {{styles.colors.white}}; text-decoration: none;"><span
+                                                                style="color: {{styles.colors.white}}; text-decoration: none;">Contact</span></a>
                                                         | <a class="whiteLink" href="{{general.website}}"
                                                             pardot-region=""
-                                                            style="color: #fff; text-decoration: none;"><span
-                                                                style="color: #fff; text-decoration: none;">Privacy
+                                                            style="color: {{styles.colors.white}}; text-decoration: none;"><span
+                                                                style="color: {{styles.colors.white}}; text-decoration: none;">Privacy
                                                                 Policy</span></a></div>
                                                 </div>
                                             </td>

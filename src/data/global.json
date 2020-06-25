@@ -2,9 +2,6 @@
   "settings": {
     "hml": false
   },
-  "colors": {
-    "email_background": "#f6f6f6"
-  },
   "general": {
     "business_name": "Cheshire Impact",
     "street_address": "1 Tara Blvd Suite 200",
@@ -12,32 +9,45 @@
     "phone": "844-GO-IMPACT",
     "about": "We're the Digital Marketing Un-Agency. Our goal is to create maximum marketing impact and to do it with measurable results.",
     "website": "https://cheshireimpact.com",
-    "logo": "https://maljenkins.github.io/cheshPublic/images/cheshlogodark.png",
-    "logo_width": "150",
+    "logo": "https://storage.pardot.com/15322/205849/cheshlogo.png",
+    "logo_width": "200",
     "favicon": "https://www.cheshireimpact.com/wp-content/uploads/2018/07/new-favicon.png",
     "contact_url": "https://www.cheshireimpact.com/contact/",
     "privacy_url": "https://www.cheshireimpact.com/privacy/"
   },
-  "nav": {
-    "fixed": true,
-    "links": true,
-    "link_info": [
-      {
-        "text": "Services",
-        "url": "https://www.cheshireimpact.com/services/"
-      },
-      {
-        "text": "About",
-        "url": "https://www.cheshireimpact.com/about/"
-      },
-      {
-        "text": "Contact",
-        "url": "https://www.cheshireimpact.com/contact/"
-      }
-    ]
+  "nav": [
+    {
+      "text": "Services",
+      "url": "https://www.cheshireimpact.com/services/"
+    },
+    {
+      "text": "About",
+      "url": "https://www.cheshireimpact.com/about/"
+    },
+    {
+      "text": "Contact",
+      "url": "https://www.cheshireimpact.com/contact/"
+    }
+  ],
+  "styles": {
+    "colors": {
+      "email_background": "#f6f6f6",
+      "footer_background": "#092b4c",
+      "link": "092b4c",
+      "white": "#ffffff",
+      "grey": "#909090",
+      "primary": "#FF7300",
+      "secondary": "#092b4c",
+      "body_color": "#333333",
+      "divider": "#cecece"
+    },
+    "fonts": {
+      "link": "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap",
+      "family": "'Open Sans',Arial,Helvetica,sans-serif"
+    }
   },
-  "header": {
-    "image": "https://maljenkins.github.io/cheshPublic/images/header_backdrop.jpg"
+  "images": {
+    "full_width": "https://picsum.photos/600/300"
   },
   "social": [
     {
