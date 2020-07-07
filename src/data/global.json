@@ -36,6 +36,7 @@
       "grey": "#909090",
       "primary": "#FF7300",
       "secondary": "#092b4c",
+      "highlight": "#3b5998",
       "body_color": "#333333",
       "divider": "#cecece"
     },
