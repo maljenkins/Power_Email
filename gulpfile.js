@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const nunjucksRender = require("gulp-nunjucks-render");
 const data = require("gulp-data");
+const plumber = require("gulp-plumber");
 const browserSync = require("browser-sync");
 const server = browserSync.create();
 
@@ -30,6 +31,7 @@ function serve(done) {
 
 function nunjucks(done) {
   gulp.src("./src/templates/*")
+    .pipe(plumber())
     .pipe(
       data(function () {
         return require("./src/data/global.json");
