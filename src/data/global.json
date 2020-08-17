@@ -37,6 +37,7 @@
       "primary": "#FF7300",
       "secondary": "#092b4c",
       "highlight": "#3b5998",
+      "button": "#FF7300",
       "body_color": "#333333",
       "divider": "#cecece"
     },
@@ -84,6 +85,18 @@
     },
     {
       "filename": "events.html"
+    },
+    {
+      "filename": "generic.html"
+    },
+    {
+      "filename": "generic_thank-you.html"
+    },
+    {
+      "filename": "webinar.html"
+    },
+    {
+      "filename": "blog.html"
     }
   ]
 }

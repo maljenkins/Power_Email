@@ -1,4 +1,5 @@
-{% set section_name = "Full Width Gallery CTA" %}
+{% set section_name = "Email Header - Logo Centered
+" %}
 {% extends "../../layout/_section.html" %}
 
 
@@ -10,7 +11,7 @@
         <tbody>
             <tr>
                 <td
-                    style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:20px;padding-top:20px;text-align:center;">
+                    style="direction:ltr;font-size:0px;padding:20px 0px 10px 0px;padding-bottom:0px;padding-top:0px;text-align:center;">
                     <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -24,21 +25,19 @@
                         style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation"
                             style="vertical-align:top;" width="100%">
-                            <!-- Title Box - Two Color Heading ** Use <span class="highlightText" for highlight -->
                             <tbody>
-                                <tr pardot-removable="" pardot-repeatable="">
-                                    <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;"
-                                        vertical-align="middle">
-                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-                                            style="border-collapse:separate;width:75%;line-height:100%;">
+                                <tr>
+                                    <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                                        <table border="0" cellpadding="0" cellspacing="0" 
+                                            role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                             <tbody>
                                                 <tr>
-                                                    <td align="center" bgcolor="{{styles.colors.button}}"
-                                                        role="presentation"
-                                                        style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:{{styles.colors.button}};"
-                                                        valign="middle"><a href="{{general.website}}" pardot-region=""
-                                                            style="display:inline-block;background:{{styles.colors.button}};color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
-                                                            target="_blank">VIEW FULL GALLERY </a></td>
+                                                    <td align="center"
+                                                        style="width:{{general.logo_width}}px;"><a
+                                                            href="{{general.website}}" target="_blank"><img
+                                                                height="auto" pardot-region="" src="{{general.logo}}"
+                                                                style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:14px;"
+                                                                width="{{general.logo_width}}"> </a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -49,6 +48,8 @@
                     </div>
                     <!--[if mso | IE]>
             </td>
+          
+            
           
         </tr>
       
