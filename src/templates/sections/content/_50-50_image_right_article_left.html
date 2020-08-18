@@ -62,7 +62,7 @@
                                 <tr pardot-removable="" pardot-repeatable="" style="">
                                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                         <div pardot-region=""
-                                            style="font-family:{{styles.fonts.family}};font-size:18px;font-weight:700;line-height:23px;text-align:left;color:{{styles.colors.secondary}};">
+                                            style="font-family:{{styles.fonts.family | safe }};font-size:18px;font-weight:700;line-height:23px;text-align:left;color:{{styles.colors.secondary}};">
                                             LOREM IPSUMING
                                         </div>
                                     </td>
@@ -71,10 +71,10 @@
                                 <tr pardot-removable="" pardot-repeatable="" style="">
                                     <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                                         <div pardot-region=""
-                                            style="font-family:{{styles.fonts.family}};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
+                                            style="font-family:{{styles.fonts.family | safe }};font-size:14px;line-height:19px;text-align:left;color:{{styles.colors.body_color}};">
                                             Nullam eu tempus dui, et iaculis massa. Duis
-                                                efficitur turpis sed suscipit imperdiet. Ut euismod malesuada
-                                                orci.
+                                            efficitur turpis sed suscipit imperdiet. Ut euismod malesuada
+                                            orci.
                                         </div>
                                     </td>
                                 </tr>
@@ -90,7 +90,7 @@
                                                         role="presentation"
                                                         style="border:none;border-radius:4px;cursor:auto;mso-padding-alt:10px 25px;background:{{styles.colors.button}};"
                                                         valign="middle"><a href="{{general.website}}" pardot-region=""
-                                                            style="display:inline-block;background:{{styles.colors.button}};color:{{styles.colors.white}};font-family:{{styles.fonts.family}};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
+                                                            style="display:inline-block;background:{{styles.colors.button}};color:{{styles.colors.white}};font-family:{{styles.fonts.family | safe }};font-size:14px;font-weight:700;line-height:19px;margin:0;text-decoration:none;text-transform:uppercase;padding:10px 25px;mso-padding-alt:0px;border-radius:4px;"
                                                             target="_blank">Learn More </a></td>
                                                 </tr>
                                             </tbody>
